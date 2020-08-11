@@ -17,7 +17,7 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = 'http://moodle-inge-abierta-uv-cl.herokuapp.com/';
+$CFG->wwwroot   = 'http://moodle-inge-abierta-uv-cl.herokuapp.com';
 $CFG->dataroot  = 'moodledata';
 $CFG->admin     = 'admin';
 
