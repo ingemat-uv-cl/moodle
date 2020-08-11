@@ -4,21 +4,21 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = getenv('DATABASE_TYPE');
+$CFG->dbtype    = 'pgsql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = 'ec2-34-195-115-225.compute-1.amazonaws.com';
+$CFG->dbname    = 'd7tp1jvaseqbsm';
+$CFG->dbuser    = 'eadntehcdchjdx';
+$CFG->dbpass    = '36d11b124a42e447659026a6bc1845537645945d9316dbc8f3bbd3399752a6d1';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => getenv('DATABASE_PORT'),
+  'dbport' => '5432',
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('WWWROOT');
-$CFG->dataroot  = getenv('DATAROOT');
+$CFG->wwwroot   = 'http://moodle-inge-abierta-uv-cl.herokuapp.com/';
+$CFG->dataroot  = 'moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
