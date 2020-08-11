@@ -18,7 +18,7 @@ $CFG->dboptions = array (
 );
 
 $CFG->wwwroot   = 'http://moodle-inge-abierta-uv-cl.herokuapp.com';
-$CFG->dataroot  = '/moodledata';
+$CFG->dataroot  = '/tmp';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
